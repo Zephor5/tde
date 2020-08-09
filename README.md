@@ -7,11 +7,11 @@ a simple restful api server to retrieve XRPUSDT trading data
 
 ### api
 
-- `/api/status`  
+- `GET /api/status`  
 get server status
   - return type: str
   - return content: `ok: timemark`
-- `/api/trade/xrpusdt/(?P<start_time>\d{13})...(?P<end_time>\d{13})`  
+- `GET /api/trade/xrpusdt/(?P<start_time>\d{13})...(?P<end_time>\d{13})`  
 retrieve XRPUSDT trading data by start and end timestamp
   - return type: json
   - return json structure: `{"msg": None, "code": 0, "data": None or {"total": 0, "items": []}}`
